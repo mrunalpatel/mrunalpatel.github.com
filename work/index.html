@@ -1,0 +1,19 @@
+---
+layout: default
+title: Work
+---
+<div class="row-fluid">
+	<div class="span12">
+		<h2>Work</h2>
+		<div class="row-fluid">
+			<div class="span12" align="center">
+			{% for post in site.posts %}
+				<div class="entries">
+							<img src="{{ post.image }}"/>
+							<h4>{{ post.title }}</h4>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
